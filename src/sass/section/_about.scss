@@ -1,0 +1,83 @@
+.about {
+  &_section {
+    .skills {
+      display: flex;
+      column-gap: 24px;
+      align-items: center !important;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        row-gap: 24px;
+      }
+      .line {
+        height: 50px;
+        @media screen and (max-width: 768px) {
+          height: 2px;
+          width: 50px;
+        }
+        border: 1px solid black;
+      }
+      .stack {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .skill-required {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        row-gap: 24px;
+        @media screen and (max-width: 520px) {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 1024px) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+        }
+      }
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 32px;
+      &_content {
+        display: flex;
+        column-gap: 26px;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          .cover {
+            img {
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              background-position: center;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+        .description {
+          row-gap: 24px;
+          p {
+            color: #000;
+            text-align: justify;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          button {
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}

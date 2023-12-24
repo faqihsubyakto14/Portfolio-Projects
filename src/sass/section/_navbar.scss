@@ -1,0 +1,107 @@
+.navbar {
+  padding: 24px 0 24px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menus {
+      .list {
+        display: flex;
+        .item {
+          margin-right: 24px;
+          &:nth-child(4) {
+            margin-right: 0;
+          }
+          a {
+            color: #061742;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &:hover {
+              color: #4d5871;
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        display: none !important;
+      }
+    }
+    .menus-mobile {
+      @media screen and (min-width: 768px) {
+        display: none !important;
+      }
+      position: absolute !important;
+      z-index: 1;
+      top: 90px;
+      right: 100%;
+      border-radius: 24px;
+      background: #1542b7;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      display: inline-flex;
+      padding: 24px;
+      width: 40%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      transition: right 0.4s;
+      .list {
+        display: flex;
+        flex-direction: column;
+        .item {
+          margin-bottom: 24px;
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+          a {
+            color: #fff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .menu_icon {
+      cursor: pointer;
+      @media screen and (min-width: 768px) {
+        display: none !important;
+      }
+    }
+  }
+}
+.sticky {
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.active {
+  color: #4d5871 !important;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+.active-mobile {
+  color: #dfd9d9 !important  ;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.show {
+  right: 20px !important;
+}

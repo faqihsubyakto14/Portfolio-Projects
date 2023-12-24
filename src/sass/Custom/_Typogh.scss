@@ -1,0 +1,23 @@
+.typogh {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  .title {
+    color: #061742;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+  .desc {
+    color: #4d5871;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+}

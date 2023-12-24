@@ -1,0 +1,40 @@
+.contact {
+  &_information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    margin-top: 70px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 80px;
+    }
+    .info {
+      display: flex;
+      column-gap: 24px;
+      .info-icon {
+        padding: 10px;
+      }
+      &-desc {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: #000;
+          font-family: Poppins;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .details {
+          color: #000;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

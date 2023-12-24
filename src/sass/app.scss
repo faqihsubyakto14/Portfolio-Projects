@@ -1,0 +1,51 @@
+// SECTION
+@use "./section/navbar";
+@use "./section/footer";
+@use "./section/Intro";
+@use "./section/about";
+@use "./section/portfolio";
+@use "./section/contact";
+
+// CUSTOM
+// Btn-custom
+@use "./Custom/btn-custom";
+@use "./Custom/Typogh";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+// Custom
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// layout
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin: 0 40px !important;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 0 20px;
+  }
+}
+
+.section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+}
